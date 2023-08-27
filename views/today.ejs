@@ -1,0 +1,47 @@
+<%- include("partials/header.ejs") %>
+<div class="container"></div>
+<div class="box" id="heading"><h1 class="title"><%= locals.Today %></h1>
+</div>
+<div class="box">
+  <ul class="list-group mb-0">
+    <% itemslist.forEach(function(item){ %>
+        <form action="/delete" method="post">
+        <li class="item1 ">
+            <input class="form-check-input me-2" id="myCheckbox"
+                type="checkbox" value="<%= item._id %>"  name='checkbox' onChange='this.form.submit()'>
+            <label class="text gowtham-para">
+                <%= item.name %>
+            </label> 
+           
+        </li>
+        <input type="hidden" name="listName" value="<%= locals.Today %>"></input>
+    </form>
+        <% }) %>
+</ul>
+<main>
+    
+    <form class="item" action="/todaytask" method="post">
+      <input class="input" type="text" name="newItem" placeholder="New Item" required>
+      <button class="btnn" type="submit" value="<%= locals.Today %>" name="add">+</button>
+    </form>
+
+  </main>
+</div>
+</div>
+<%- include("partials/footer.ejs") %>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+
+$("[id^='myCheckbox']").on('change',function() 
+    {
+        const checkbox = $(this);
+                const label = checkbox.siblings(".gowtham-para");
+
+                if (checkbox.prop("checked")) {
+                    label.addClass("completed-task");
+                } else {
+                    label.removeClass("completed-task");
+                }
+    });
+</script>

@@ -1,0 +1,133 @@
+.container img{
+    width: 50px;
+    height: 50px;
+}
+body{
+    background-image: -webkit-linear-gradient(50deg, #A0C49D 50%, #E1ECC8 50%);
+    height: 100%;
+    min-height: 100vh;
+}
+
+.one{
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    color: #536350;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.main{
+    color: #eff5ee;
+    height: 40px;
+    background-color: #6d7b4b;
+    border-radius: 8px;
+    border: #667c63;
+    
+}
+.image{
+    width: 500px  !important;
+    height: 400px  !important;
+}
+.correct{
+    text-decoration: none;
+    color: #7f8d68;
+}
+.correct:hover{
+    cursor: pointer;
+    color: #92a469;
+}
+p{
+    color: #5d6351;
+}
+.text{
+    color: #94a37c;
+    
+}
+.main:hover{
+    color: #59624a;
+    background-color: #92a469;
+}
+.head{
+    --bs-text-opacity: 1;
+    color: #536350;
+}
+.copyright{
+    text-align: center;
+    color: #536350;
+}
+span{
+    color: #536350;
+}
+.light{
+    color: #648b5e;
+}
+.box {
+    max-width: 400px;
+    padding-top: 5px;
+    min-height: 50px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+ul{
+    padding: 0px;
+  list-style: none;
+}
+
+.item {
+    margin-top: 0px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+.item1{
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #f1f1f1;
+      padding-left: 20px;
+      font-size: 20px;
+}
+input[type="text"] {
+    color: #41513e;
+    text-align: center;
+    height: 40px;
+    top: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+   margin-left: 10px;
+}
+#heading {
+    background-color: #698067;
+    text-align: center;
+    color: #eff2ef;
+    font-family: "helvetica neue";
+}
+
+.btnn{
+    margin-left: 8px;
+    margin-top: 0px;
+    min-height: 45px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #698067;
+    color: #fff;
+    padding-bottom: 5px;
+    font-size: 30px;
+    border-width: 0;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.completed-task{
+    text-decoration: line-through;
+}
